@@ -1,0 +1,253 @@
+//https://coolors.co/020402-758173-a9c5a0-f4fff8-c6dec6
+
+body{
+		padding: 0px;
+	margin: 0px;
+	overflow:hidden;
+		font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+		background-color:#F4FFF8;
+}
+
+#canvasContainer{
+	position:absolute;
+	top: 0px;
+
+}
+#theCanvas{
+//position:absolute;
+	height:100vh;
+	width:100vw;
+//	border: 1px solid;
+}
+#mario1{
+	transform: rotate(90deg);
+
+}
+#joiningDiv input{
+	//height:50px;
+	font-size:2em;
+	max-width:90vw;
+	margin-top:3vh;
+	//background-color:white;
+}
+#joiningDiv a{
+	text-decoration:none;
+	color:#80A1D4	;
+	
+}
+#joiningDiv{
+	width:98vw;
+	font-size:4em;
+	height:98vh;
+	z-index:5000;
+	position:absolute;
+	background-color:#F4FFF8;
+	text-align:center;
+	padding-top: 2vh;
+	padding-left: 2vw;
+	
+}
+#joinFromInputButton{
+	min-width:40vw;
+	padding:30px;
+	border-radius:10px;
+	background-color:#75C9C8;
+	
+}
+.playerInfo{
+	z-index:20;
+	padding: 30px;
+	position:absolute;
+	//display:none !important;
+	font-size:2em;
+	border-radius: 10px;
+	//box-shadow: 10px 14px 44px -5px rgba(0,0,0,0.35);
+}
+.playerInfo h1{
+}
+.scoreText{
+	background-color:rgba(0,0,0,0);
+	//font-size:2em;
+	border:none;
+	font-size:1em;
+	width:70px;
+	
+}
+
+#menuButton{
+	padding: 2vh;
+	z-index:23;
+	position:absolute;
+	top:0px;
+	right:0px;
+
+}
+#menubackground{
+	position:absolute;
+	z-index:25;
+	height:100vh;
+	width:100vw;
+	display:none;
+	background-color: rgba(0,0,0,0.3);
+}
+#menuContainer{
+	background-color:rgb(30,30,30);
+	position:absolute;
+	width:90vw;
+	left: 5vw;
+	top:5vh;
+	min-height:90vh;
+	z-index:27;
+	border-radius:2vh;
+	text-align:center;
+	color:white;
+	min-width:400px;
+//	padding-top: 5vh;
+	//padding-left: 5vw;
+	//padding-right: 5vw;
+
+	font-size:1.5em;
+	//overflow:auto;
+	//font-weight: bold;
+}
+#menuContainer input, #menuContainer a{
+	color:white;
+	font-size:50px;
+	background-color:rgba(0,0,0,0);
+	margin-top:0.5vh;
+	margin-bottom:0.5vh;
+	
+	border: none;
+	text-decoration: none;
+}
+.gameButton {
+    white-space: normal;
+    width: 100px;
+}
+input[type=checkbox]
+{
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+}
+.line{
+	height:2px;
+	background-color:white;
+	width:100%;
+	//margin-left: 15%;
+}
+#menuContainer input:hover, #menuButton img:hover, #closeButton:hover{
+	cursor:pointer;
+}
+
+#gameContainer{
+	padding:0px;
+	margin:0px;
+	width:100vw;
+	display:none;
+	height:100vh;
+	background-color:#F4FFF8;
+}
+#playerManaging{
+	padding:0px;
+	margin:0px;
+	background-color:#F4FFF8;
+	width:100vw;
+	height:100vh;
+}
+.gameButton{
+	//width:300px;
+	min-width:80vw;
+	margin-left:10vw;
+	margin-top:20vh;
+	height:400px;
+	//color:white;
+	background-color:#80A1D4;
+	border-radius:30px;
+	
+	font-size:70px;
+}
+.hostOnly{
+	display:none;
+}
+.menuText{
+	border-style: solid !important;
+    border-width: 1px !important;
+	border-color:white !important;
+	padding: 10px;
+}
+.playerBox{
+	float:left;
+	margin-top:10vh;
+	margin-left:5vw;
+	background-color:#80A1D4;
+	padding:40px;
+	font-size:50px;
+}
+.playerBox input{
+	font-size:50px;
+	font-weight:bold;
+	float:left;
+	background-color:rgba(0,0,0,0);
+	border:0px;
+
+}
+#menuButton img{
+	height:9vh;
+	width:9vh;
+}
+.smaller{
+	font-size: 30px !important;
+	font-weight: none;
+}
+#closeButton{
+	position:absolute;
+	right: -30px;
+	top: -30px;	
+	height:9vh;
+	width:9vh;
+}
+
+#info{
+	position:absolute;
+	z-index:21;
+	width:100vw;
+	font-size:3em;
+	bottom:2vh;
+	text-align:center;
+	color:black;
+	
+}
+#info2{
+	position:absolute;
+	z-index:21;
+	width:100vw;
+	font-size:3em;
+	top:2vh;
+	text-align:center;
+	color:black;
+	display:none;
+}
+#roomID{
+	position:absolute;
+	z-index:21;
+	width:100vw;
+	font-weight:bold;
+	right:25vw;
+	font-size:3em;
+	top:2vh;
+	text-align:right;
+	color:black;
+	//display:none;
+}
+
+#testButtons{
+	position:absolute;
+	bottom:5vh;
+	z-index:10;
+	display:none;
+
+}

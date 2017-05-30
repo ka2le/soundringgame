@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <meta name="viewport" content="width=device-width" /> -->
+<meta name="description" content="New Project" />
+  <meta name="keywords" content="New Project" />
+  <meta charset="utf-8">
+<title>Sound Ring</title>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+<link rel="stylesheet" href="main.css">
+<link href="css.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="main.js"></script>
+ <script type="text/javascript" src="functions.js"></script>
+ <link href="favicon.ico" rel="icon" type="image/png" />
+</head>
+<body onload="onload()">
+<div id="joiningDiv"  >Connecting...</div>
+<div id="menuButton" >
+<img onclick="toggleMenu()" src="img/settings.png"></img>
+</div>
+<div id="menubackground" onclick="toggleMenu()"  >
+	<div id="menuContainer">
+		<img id="closeButton" onclick="toggleMenu()" src="img/x.png">
+		<h1> Sound Ring by KK</h1>
+
+		<input type="text" class="menuText" id="userNameInput" Placeholder="Player X"><br>
+		<input type="button" class="menuButton"  value="Update User Name" onclick="updateUserNameFromInput()"><br>
+		<p class="line hostOnly"></p>
+		<input type="button" class="menuButton hostOnly"  value="Start New Game" onclick="startGame()"><br>
+		<input type="button" class="menuButton hostOnly"  value="Start Round 2" onclick="startRound(1)"><br>
+				<p class="line "></p>
+		
+		<p><input type="checkbox"  class="hostOnly" id="cheatsCheck" value="Cheats" onclick=""> Cheats</P>
+		<p class="line"></p>
+		<a href="http://192.168.1.12:8080/#host">Become Host</a><br>
+		<p class="line"></p>
+		<input type="button" class="menuButton smaller"  value="Sounds by: Daniel Simion" ><br>
+	</div>
+</div>
+<div id="testButtons" class="no-zoom" >
+<input type="button" style="height: 5vh; font-size:2em;"onclick="testDraw()" value="Test Button">
+</div>
+<div id="info" class="no-zoom"  >	
+
+</div>
+<div id="roomID" class="no-zoom" >	
+	Room ID: 4238
+</div>
+<div id="info2" class="no-zoom" >	
+	Place Meeple
+</div>
+<div id="playerManaging"  >
+
+</div>
+<div id="gameContainer" >
+	<input value="Anti-Ghost Defence System " onclick="buttonClick()" type="button" class="gameButton no-zoom">
+</div>
+
+</body>
+</html>

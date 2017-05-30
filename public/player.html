@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <meta name="viewport" content="width=device-width" /> -->
+<meta name="description" content="New Project" />
+  <meta name="keywords" content="New Project" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta charset="utf-8">
+<title>Draw Game</title>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="main.css">
+<link href="player.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="hamburger.css">
+ 	 <script type="text/javascript" src="main.js"></script>
+	  <script type="text/javascript" src="jscolor.min.js"></script>
+	 <script type="text/javascript" src="player.js"></script>
+ <link href="favicon.ico" rel="icon" type="image/png" />
+</head>
+<body onload="onload()">
+	<div id="joiningDiv">
+		<div id="joinButtons">
+			<input id="joinID" maxlength="4" class="joinMenu" type="number" size="4">
+			<input type="button" class="joinMenu" onclick="joinByID('input')" value="Join">
+		</div>
+		<label id="joinText"></label>
+	</div>
+	<label onclick="" id="playerNumber" value="0"></label>
+		
+		<div id="sound" >
+			<div id="nav-icon3">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			  <span></span>
+			</div>
+		</div>
+		 <div id="menu">
+					<!-- <input type="button" onclick="initReconnect()" value="Reconnect" > <br> -->
+					<h1>Menu</h1><p class="line"></p>
+					
+					<input type="button" class="menuButton" id="sideHide" onclick="toggleSideMenu()" value="Hide Toolbar" > <br>
+					<input type="button" class="menuButton" onclick="clearCanvas()" value="Clear Drawing" > <br>
+					<input type="button" class="menuButton" onclick="getNewWord()" value="Get New Word" > <br>
+					<p class="line"></p>
+					<input type="button" class="menuButton" onclick="" id="whatsMyWordButton" value="Click here to see word again" > <br>
+					<p class="line"></p>
+					<input type="button" onclick="sendStart()" value="Start Game " > <br>
+					<div id="player1Stuff">
+					<input type="button" onclick="testStart()" value="Test Start " > <br>
+					<input type="button" onclick="testStart2()" value=" Test Start Someone Else " > <br> 
+
+<!--  					<input type="button" onclick="startGame('5')" value="Start 5 player game" > <br>
+					<input type="button" onclick="testTile('4')" value="new Tile"><br>
+					<input type="button" onclick="testPlaceMeeple()" value="place MEELPE" > <br>
+					<input type="button" onclick="testPlaceMeeple2()" value="show meeple some hidden" > <br>
+					<input type="button" onclick="testDone()" value="Test Done" > <br>  -->
+					</div>
+					<p class="line"></p>
+					<p><input type="checkbox"  id="androidOffset" value="" onclick=""> Android Offset</P>
+
+			</div> 
+			<div id="inputContainer" >
+				
+				<div id="sideMenu">
+					
+					<input type="button" class="sideMenuButton no-zoom btn thin" onclick="changeDrawSize('1')" value="-">
+					<input type="button" class="sideMenuButton no-zoom btn thin" onclick="changeDrawSize('5')" value="+">
+					<button onclick="changeColorToPalette()" id="paletteButton" class="jscolor {valueElement:'chosen-value', onFineChange:'setTextColor(this)'} colorSelector sideMenuButton no-zoom ">
+						Color
+						
+					</button>
+					
+				<!-- 	<input type="button" class="sideMenuButton no-zoom red" onclick="changeDrawColor('red')" value="">
+					<input type="button" class="sideMenuButton no-zoom green" onclick="changeDrawColor('green')" value="">
+					<input type="button" class="sideMenuButton no-zoom blue" onclick="changeDrawColor('blue')" value="">
+					<input type="button" class="sideMenuButton no-zoom yellow" onclick="changeDrawColor('yellow')" value="">
+					<input type="button" class="sideMenuButton no-zoom purple" onclick="changeDrawColor('purple')" value="">
+					<input type="button" class="sideMenuButton no-zoom brown" onclick="changeDrawColor('brown')" value="">
+					<input type="button" class="sideMenuButton no-zoom white" onclick="changeDrawColor('white')" value=""> -->
+					<input type="button" class="sideMenuButton no-zoom btn black" onclick="changeDrawColor('black')" value="">
+					<input type="button" class="sideMenuButton no-zoom btn thick" onclick="undo()" value="↶">
+					<input type="button" class="sideMenuButton no-zoom btn thick" onclick="redo()" value="↷">
+					<button class="sideMenuButton btn no-zoom " onclick="clearCanvas()">
+					
+						<img src="img/clear.png">
+					</button>
+				<!-- 	<input type="button" class="sideMenuButton no-zoom btn clear" onclick="clearCanvas()" value="Clear"> -->
+					<input type="button" class="sideMenuButton no-zoom btn clear" onclick="fillCanvas()" value="Fill">
+				</div>
+				<canvas id="theCanvas" class="no-zoom"></canvas>
+				
+				<!-- <div id="waitingDiv">Waiting for someone else</div> -->
+			</div> 
+			 <div id="waitingDiv">Waiting for game to start</div>
+			<div id="yourWord"></div>
+			<div id="guessContainer">
+				<input type="text" id="guessText" placeholder="Write your guess here">
+				<input type="button"  onclick="guess()"  value="Send Guess" > <br>
+			
+			</div>
+<!-- 	<div class="shape2"></div>
+	<div class="shape4"></div> -->
+	<div id="rotate">Please rotate your device
+					<br>
+					<br>
+					<br>
+					<img src="img/rotate.png"></img>
+					</div>
+ <div id="bottomTag"></div>
+</body>
+</html>
